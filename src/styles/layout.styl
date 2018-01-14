@@ -47,3 +47,37 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea, label
     padding 0
     text-decoration none
     -webkit-font-smoothing antialiased
+    
+.absolute-background
+    position absolute
+    
+.container
+    display flex
+    
+    &__outer
+        flex-flow row wrap
+        justify-content center
+        align-items center
+        
+        position relative
+        
+        height auto
+        width 100vw
+        
+    &__inner
+        position relative
+        z-index 10
+
+        flex-flow column wrap
+        justify-content space-around
+        align-items center
+
+        max-width 1260px
+        width 100%
+        
+        min-height 500px
+        
+        padding 50px 0
+        
+        @media screen and (max-width 1260px)
+            max-width 95vw
