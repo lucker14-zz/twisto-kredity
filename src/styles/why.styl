@@ -1,22 +1,51 @@
+.container__outer--why
+    z-index 10
+
 .container--inner__why
     background-color white
+    padding 150px 0 80px 0
+    
+    h2
+        color #4e0f89
+        font-family "Calibre - Semibold"
+        font-size 50px
+        font-weight 400
+        line-height 75.92px
+        margin-bottom 70px
     
     .why
         flex-flow row wrap
         justify-content center
         align-items center
+        margin-bottom 70px
         
         &__item
             max-width 375px
+            min-height 275px
             display flex
             flex-flow column wrap
-            justify-content center
+            justify-content flex-end
             align-items center
             
             .img
                 background-size cover
                 background-position center
                 background-repeat no-repeat
+                
+                &#cart
+                    width 101px
+                    height 142px
+                    background-image url('assets/cart.png')
+                    
+                &#docs
+                    width 139px
+                    height 132px
+                    background-image url('assets/docs.png')
+                    
+                &#cards
+                    width 143px
+                    height 107px
+                    background-image url('assets/cards.png')
                 
             h3
                 color #4e0f89

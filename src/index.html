@@ -61,9 +61,9 @@
         </div>
     </nav>
 
-    Steering wheel. Yeah, gloves and steering wheel... Somebody tell him to give it to me... COME ON! MOVE!
-
-    <div class="container container__outer">
+    <div class="container container__outer container__outer--hero">
+        <div class="absolute-background absolute-background--hero"></div>
+        <div class="absolute-background clouds"></div>
         <div class="container container__inner container__inner--hero">
             <img src="assets/logo.svg" alt="Twisto.cz" width="214" height="65">
             <h1>Klikni na sklenici a sílou Twistuse  proměň vodu v kredity</h1>
@@ -81,23 +81,24 @@
                     <span class="glasses__text">Mléko</span>
                 </div>
             </div>
+            <div class="absolute-background twistus"></div>
         </div>
     </div>
-    <div class="container container__outer">
-        <div class="container container__inner">
+    <div class="container container__outer container__outer--why">
+        <div class="container container__inner container--inner__why">
             <h2>Co mi Twistus zaplatí?</h2>
             <div class="container why">
-                <div class="why-item" id="cart">
+                <div class="why__item" id="cart">
                     <div class="img" id="cart"></div>
                     <h3>Online nákupy</h3>
                     <p>Zatáhneme za vás účet u našich partnerských e-shopů.</p>
                 </div>
-                <div class="why-item" id="docs">
+                <div class="why__item" id="docs">
                     <div class="img" id="docs"></div>
                     <h3>Faktury a složenky</h3>
                     <p>Třeba za celý měsíc. Vrátíte nám to pohodlně v rámci jediné platby.</p>
                 </div>
-                <div class="why-item" id="cards">
+                <div class="why__item" id="cards">
                     <div class="img" id="cards"></div>
                     <h3>A ostatní nákupy</h3>
                     <p>Stačí si objednat naši zbrusu novou platební kartu nebo náramek.</p>
@@ -259,7 +260,7 @@
         var didScroll,
                 lastScrollTop = 0,
                 delta = 10,
-                menuOffset = $('.container__inner--sales').offset().top;
+                menuOffset = $('.container__outer--why').offset().top;
 
         $(window).on('scroll', function (e) {
             didScroll = true;
