@@ -50,7 +50,7 @@ function animateCoin(event){
 
     setTimeout(function() {
         showPopup()
-    }, 2000)
+    }, 1500)
 
     glasses.forEach(function(item, index){
         item.removeEventListener('click', sendToAnimate)
