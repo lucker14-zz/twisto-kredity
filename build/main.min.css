@@ -3913,7 +3913,7 @@ body button .success {
 .popup__container .text-box h3 {
   color: #4e0f89;
   font-family: Roboto, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 56px;
 }
@@ -3939,7 +3939,7 @@ body button .success {
   text-decoration: underline;
 }
 .popup__container .text-box a.button {
-  margin-top: 50px;
+  margin-top: 32px;
 }
 .popup__close {
   position: absolute;
@@ -4276,7 +4276,7 @@ body button .success {
 .popup__container .text-box h3 {
   color: #4e0f89;
   font-family: Roboto, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 56px;
 }
@@ -4302,7 +4302,7 @@ body button .success {
   text-decoration: underline;
 }
 .popup__container .text-box a.button {
-  margin-top: 50px;
+  margin-top: 32px;
 }
 .popup__close {
   position: absolute;

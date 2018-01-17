@@ -111,3 +111,11 @@ function setValueToPopup(item){
     var value = item.substring(item.length - 3, item.length)
     popup_text.innerText = value
 }
+
+var all_affected_ctas = [].slice.call(document.querySelectorAll('a.button'))
+
+function setUrlToCtas(input){
+    all_affected_ctas.forEach(function(item, index){
+        item.src = input
+    })
+}
