@@ -90,18 +90,24 @@ console.log(weighed_list[random_num]);
 var my_list = [
     {
         name: 'string',
-        code: 'string'
+        code: 'string',
     },{
         name: 'string',
-        code: 'string'
+        code: 'string',
     },{
         name: 'string',
-        code: 'string'
+        code: 'string',
     },{
         name: 'string',
-        code: 'string'
+        code: 'string',
     },{
         name: 'string',
-        code: 'string'
+        code: 'string',
     }
 ]
+
+function setValueToPopup(item){
+    var popup_text = document.querySelector('.popup span.green')
+    var value = item.substring(item.length - 3, item.length)
+    popup_text.innerText = value
+}
