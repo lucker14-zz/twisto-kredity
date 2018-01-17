@@ -3,9 +3,7 @@ var popup = document.querySelector('.popup')
 var popup_close = document.querySelector('.popup__close')
 
 glasses.forEach(function(item, index){
-    item.addEventListener('click', function(e){
-        animateCoin(e)
-    })
+    item.addEventListener('click', sendToAnimate)
 })
 
 popup.addEventListener('click', function(e){
@@ -15,6 +13,10 @@ popup.addEventListener('click', function(e){
 })
 
 popup_close.addEventListener('click', hidePopup)
+
+function sendToAnimate(e){
+    animateCoin(e)
+}
 
 function showPopup() {
     if (popup.classList.contains('hidden')) 
@@ -46,18 +48,12 @@ function animateCoin(event){
 
     console.log(coin)
 
-    // coin.classList.remove('hidden')
-    // coin.classList.add('flipInY')
-
-    // event.target.classList.add('relatives-top')
-    // coin.classList.add('relatives')
-    // text.classList.add('relatives')
-
     setTimeout(function() {
         showPopup()
     }, 2000)
 
     glasses.forEach(function(item, index){
-        // item.remove
+        item.removeEventListener('click', sendToAnimate)
+        item.addEventListener('click', showPopup)
     })
 }
