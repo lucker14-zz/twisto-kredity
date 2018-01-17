@@ -1055,6 +1055,24 @@ body button .success {
     display: none;
   }
 }
+.relatives-top {
+  position: relative;
+  top: 121px;
+}
+@media screen and (max-width: $screen-md) {
+  .relatives-top {
+    bottom: 13.65vw;
+  }
+}
+.relatives {
+  position: relative;
+  bottom: 121px;
+}
+@media screen and (max-width: $screen-md) {
+  .relatives {
+    bottom: 13.65vw;
+  }
+}
 .glasses {
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
@@ -1102,10 +1120,34 @@ body button .success {
   -webkit-align-items: center;
   align-items: center;
   margin: 0 25px;
+  max-height: 290px;
 }
 @media screen and (max-width: $screen-pc) {
   .glasses__item {
     margin: 0 15px;
+  }
+}
+.glasses__item .coin {
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 94px;
+  background-image: url("assets/token.png");
+}
+.glasses__item .coin#wine {
+  height: 214px;
+}
+.glasses__item .coin#water {
+  height: 222px;
+}
+.glasses__item .coin#beer {
+  height: 242px;
+}
+@media screen and (max-width: $screen-md) {
+  .glasses__item .coin {
+    height: 27.3vw !important;
   }
 }
 .glasses__img {
@@ -1115,6 +1157,14 @@ body button .success {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+.glasses__img.coin {
+  background-image: url("assets/token.png") !important;
+  -webkit-background-size: 94px 96px !important;
+  -moz-background-size: 94px 96px !important;
+  background-size: 94px 96px !important;
+}
+.glasses__img.shaking {
   -webkit-animation: tryme 7s ease-out infinite;
   -moz-animation: tryme 7s ease-out infinite;
   -o-animation: tryme 7s ease-out infinite;
@@ -1136,6 +1186,8 @@ body button .success {
   background-image: url("assets/water.png");
   width: 162px;
   height: 222px;
+}
+.glasses__img#water.shaking {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   -o-animation-delay: 0.2s;
@@ -1152,6 +1204,8 @@ body button .success {
   background-image: url("assets/beer.png");
   width: 222px;
   height: 242px;
+}
+.glasses__img#beer.shaking {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
   -o-animation-delay: 0.4s;
@@ -3077,6 +3131,24 @@ body button .success {
     display: none;
   }
 }
+.relatives-top {
+  position: relative;
+  top: 121px;
+}
+@media screen and (max-width: 768px) {
+  .relatives-top {
+    bottom: 13.65vw;
+  }
+}
+.relatives {
+  position: relative;
+  bottom: 121px;
+}
+@media screen and (max-width: 768px) {
+  .relatives {
+    bottom: 13.65vw;
+  }
+}
 .glasses {
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
@@ -3183,10 +3255,36 @@ body button .success {
   -o-align-items: center;
   align-items: center;
   margin: 0 25px;
+  max-height: 290px;
 }
 @media screen and (max-width: 1220px) {
   .glasses__item {
     margin: 0 15px;
+  }
+}
+.glasses__item .coin {
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 94px;
+  background-image: url("assets/token.png");
+}
+.glasses__item .coin#wine {
+  height: 214px;
+}
+.glasses__item .coin#water {
+  height: 222px;
+}
+.glasses__item .coin#beer {
+  height: 242px;
+}
+@media screen and (max-width: 768px) {
+  .glasses__item .coin {
+    height: 27.3vw !important;
   }
 }
 .glasses__img {
@@ -3198,6 +3296,16 @@ body button .success {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+.glasses__img.coin {
+  background-image: url("assets/token.png") !important;
+  -webkit-background-size: 94px 96px !important;
+  -moz-background-size: 94px 96px !important;
+  -ms-background-size: 94px 96px !important;
+  -o-background-size: 94px 96px !important;
+  background-size: 94px 96px !important;
+}
+.glasses__img.shaking {
   -webkit-animation: tryme 7s ease-out infinite;
   -moz-animation: tryme 7s ease-out infinite;
   -ms-animation: tryme 7s ease-out infinite;
@@ -3219,6 +3327,8 @@ body button .success {
   background-image: url("assets/water.png");
   width: 162px;
   height: 222px;
+}
+.glasses__img#water.shaking {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   -ms-animation-delay: 0.2s;
@@ -3235,6 +3345,8 @@ body button .success {
   background-image: url("assets/beer.png");
   width: 222px;
   height: 242px;
+}
+.glasses__img#beer.shaking {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
   -ms-animation-delay: 0.4s;

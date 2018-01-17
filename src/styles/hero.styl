@@ -75,7 +75,22 @@
         @media screen and (max-width $screen-lg)
             display none
         
-        
+    
+.relatives-top
+    position relative
+    top 121px
+
+    @media screen and (max-width $screen-md)
+        bottom 13.65vw   
+
+
+.relatives
+    position relative
+    bottom 121px
+    
+    @media screen and (max-width $screen-md)
+        bottom 13.65vw
+
 .glasses
     flex-flow row wrap
     justify-content center
@@ -87,9 +102,30 @@
         justify-content center
         align-items center
         margin 0 25px
+        max-height 290px
         
         @media screen and (max-width $screen-pc)
             margin 0 15px
+            
+        .coin
+            background-size contain
+            background-position center
+            background-repeat no-repeat
+            width 94px
+            background-image url('assets/token.png')
+            
+                
+            &#wine
+                height 214px          
+                
+            &#water
+                height 222px
+                
+            &#beer
+                height 242px
+            
+            @media screen and (max-width $screen-md)
+                height 27.3vw !important
         
     &__img
         background-size cover
@@ -97,7 +133,12 @@
         background-repeat no-repeat
         cursor pointer
         
-        animation tryme 7s ease-out infinite
+        &.coin
+            background-image url('assets/token.png') !important
+            background-size 94px 96px !important
+        
+        &.shaking
+            animation tryme 7s ease-out infinite
         
         &#wine
             background-image url('assets/wine.png')
@@ -113,7 +154,8 @@
             width 162px
             height 222px
             
-            animation-delay .2s
+            &.shaking
+                animation-delay .2s
             
             @media screen and (max-width $screen-md)
                 width 20vw
@@ -124,7 +166,8 @@
             width 222px
             height 242px
             
-            animation-delay .4s
+            &.shaking
+                animation-delay .4s
             
             @media screen and (max-width $screen-md)
                 width 20vw

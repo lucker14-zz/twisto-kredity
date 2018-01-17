@@ -24,7 +24,7 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest(paths.jsDest))
     .pipe(rename('scripts.min.js'))
     // Strip all debugger code out.
-    .pipe(stripDebug())
+    // .pipe(stripDebug())
     // Minify the JavaScript.
     .pipe(uglify())
     .pipe(gulp.dest(paths.jsDest));
