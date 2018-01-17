@@ -3,7 +3,14 @@
     .absolute-background--hero
         background-image url('assets/bg.png')
         min-width 100vw
-        min-height 850px
+        min-height 920px
+        
+        @media screen and (min-width 2500px)
+            background-position-x 100%
+            background-repeat-x no-repeat
+        
+        @media screen and (max-width $screen-xs)
+            min-height 850px
         
     .clouds
         background-image url('assets/clouds.png')
@@ -23,8 +30,14 @@
     flex-flow column wrap
     justify-content flex-start
     align-items flex-start
-    min-height 850px
+    min-height 920px
     position relative
+    
+    @media screen and (max-width $screen-lg)
+        align-items center
+        
+    @media screen and (max-width $screen-xs)
+        min-height 850px
     
     h1
         text-shadow 0 6px 40px rgba(0, 0, 0, 0.57)
@@ -34,16 +47,33 @@
         font-weight 700
         margin 60px 0 75px
         
+        @media screen and (max-width $screen-pc)
+            font-size 55px
+            max-width 900px
+            margin 50px 0 35px
+        
+        @media screen and (max-width $screen-lg)
+            width 100%
+            text-align center
+            font-size 42px
+            
+        @media screen and (max-width $screen-tn)
+            font-size 36px
+            
+
     .twistus
         background-size cover
         background-position center
         background-repeat no-repeat
         background-image url('assets/twistus.png')
-        width 572px
-        height 741px
+        width 800px
+        height 1000px
         position absolute
-        right -75px
-        bottom -60px
+        right -225px
+        bottom -260px
+        
+        @media screen and (max-width $screen-lg)
+            display none
         
         
 .glasses
@@ -56,24 +86,49 @@
         flex-flow column wrap
         justify-content center
         align-items center
-        margin 0 50px
+        margin 0 25px
+        
+        @media screen and (max-width $screen-pc)
+            margin 0 15px
         
     &__img
         background-size cover
         background-position center
         background-repeat no-repeat
+        cursor pointer
         
-        width 146px
-        height 198px
+        animation tryme 7s ease-out infinite
         
         &#wine
             background-image url('assets/wine.png')
+            width 165px
+            height 214px
+            
+            @media screen and (max-width $screen-md)
+                width 20vw
+                height 27.3vw
             
         &#water
             background-image url('assets/water.png')
+            width 162px
+            height 222px
+            
+            animation-delay .2s
+            
+            @media screen and (max-width $screen-md)
+                width 20vw
+                height 27.3vw
             
         &#beer
-            background-image url('assets/milk.png')
+            background-image url('assets/beer.png')
+            width 222px
+            height 242px
+            
+            animation-delay .4s
+            
+            @media screen and (max-width $screen-md)
+                width 20vw
+                height 27.3vw
             
         
     &__text

@@ -11,12 +11,23 @@
     justify-content center
     align-items center
     
+    opacity 1
+    
+    transition opacity .4s
+    
+    .hidden
+        display flex
+        pointer-events none
+        opacity 0
+        
+        transition opacity .4s
+    
     &__container
         position relative
         box-shadow 0 20px 50px rgba(17, 1, 35, 0.1)
         border-radius 6px
         background-color #ffffff
-        padding 75px 50px
+        padding 55px 50px 75px
         
         display flex
         flex-flow column wrap
@@ -34,10 +45,9 @@
             
             span.green
                 color #62c95b
-                font-family "Roboto - Black"
-                font-weight 400
+                font-family Roboto
                 font-size 50px
-                font-weight 700
+                font-weight 900
                 
             span.green-smaller
                 color #62c95b

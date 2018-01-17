@@ -54,16 +54,34 @@
             <div class="hidden-sm" style="">
                 <a href="https://www.twisto.cz/registrace/" class="button homepage-bar__cta">Chci se zdarma registrovat</a>
                 
-                    <p class="homepage-bar__credits">+ bonus 200&nbsp;Kč za registraci</p>
+                    <p class="homepage-bar__credits" style='display: none;'>+ bonus 200&nbsp;Kč za registraci</p>
                 
             </div>
             <a href="https://www.twisto.cz/registrace/" class="button homepage-bar__cta visible-sm">Chci se zdarma registrovat</a>
         </div>
     </nav>
 
+    <div class="container absolute-background popup hidden">
+        <div class="popup__container">
+            <div class="popup__close"></div>
+            <h2>Vylosovaly ste si kredity v hodnotě <span class="green">500</span><span class="green-smaller">Kč</span></h2>
+            <div class="popup__content-holder">
+                <div class="image" id="credits"></div>
+                <div class="text-box">
+                    <h3>Jak kredity použít?</h3>
+                    <p>Udělej objednávku tak jak si zvyklý, vyber platební metodu Twisto a dej ZAPLATIT.  Kredity uplatníš, když budeš objednávku platit Twistu.</p>
+                    <a href="https://www.twisto.cz/seznam-eshopu/" id="text-link">Seznam e-shopů</a>
+                    <a href="#" class="button">DOKONČIT REGISTARCI</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container container__outer container__outer--hero">
         <div class="absolute-background absolute-background--hero"></div>
+        <div class="absolute-background clouds" style='left: -50%;'></div>
         <div class="absolute-background clouds"></div>
+        <div class="absolute-background clouds" style='left: 50%;'></div>
         <div class="container container__inner container__inner--hero">
             <img src="assets/logo.svg" alt="Twisto.cz" width="214" height="65">
             <h1>Klikni na sklenici a sílou Twistuse  proměň vodu v kredity</h1>
@@ -78,7 +96,7 @@
                 </div>
                 <div class="glasses__item" id="beer">
                     <div class="glasses__img" id="beer"></div>
-                    <span class="glasses__text">Mléko</span>
+                    <span class="glasses__text">Pivo</span>
                 </div>
             </div>
             <div class="absolute-background twistus"></div>
@@ -91,20 +109,30 @@
                 <div class="why__item" id="cart">
                     <div class="img" id="cart"></div>
                     <h3>Online nákupy</h3>
-                    <p>Zatáhneme za vás účet u našich partnerských e-shopů.</p>
+                    <p>Zatáhneme za vás účet u našich partnerských e&#8209;shopů.</p>
                 </div>
                 <div class="why__item" id="docs">
                     <div class="img" id="docs"></div>
                     <h3>Faktury a složenky</h3>
                     <p>Třeba za celý měsíc. Vrátíte nám to pohodlně v rámci jediné platby.</p>
                 </div>
-                <div class="why__item" id="cards">
+                <div class="why__item" id="cards" style='border: none;'>
                     <div class="img" id="cards"></div>
                     <h3>A ostatní nákupy</h3>
                     <p>Stačí si objednat naši zbrusu novou platební kartu nebo náramek.</p>
                 </div>
             </div>
             <a href="https://www.twisto.cz/registrace/" class="button">dokončit registraci</a>
+        </div>
+    </div>
+
+    <div class="container container__outer container__outer--stats">
+        <div class="container container__inner container__inner--stats">
+            <h2 class="credits">1 403 121 kreditů</h2>
+            <div class="absolute-background clouds2"></div>
+            <div class="box">
+                <span>Již bylo proměno a rozdáno mezi smrtelníky.</span>
+            </div>
         </div>
     </div>
 

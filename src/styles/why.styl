@@ -12,6 +12,10 @@
         font-weight 400
         line-height 75.92px
         margin-bottom 70px
+        
+        @media screen and (max-width $screen-xs)
+            width 100%
+            text-align center
     
     .why
         flex-flow row wrap
@@ -21,11 +25,22 @@
         
         &__item
             max-width 375px
-            min-height 275px
+            min-height 300px
             display flex
             flex-flow column wrap
             justify-content flex-end
             align-items center
+            border-right 1px solid #d9d9d9
+            
+            &:nth-child(last)
+                border none
+            
+            @media screen and (max-width $screen-pc)
+                max-width 33% !important
+                border none !important
+                
+            @media screen and (max-width $screen-md)
+                max-width 375px !important
             
             .img
                 background-size cover

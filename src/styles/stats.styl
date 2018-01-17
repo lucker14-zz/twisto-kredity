@@ -1,0 +1,57 @@
+.container__outer--stats
+    background-color #f2f4fc
+    
+    .container__inner--stats
+        padding 150px 0
+        position relative
+        
+        @media screen and (max-width $screen-utn)
+            padding 80px 0 !important
+        
+        h2
+            color #4e0f89
+            font-size 72px
+            font-family Roboto, sans-serif
+            font-weight 700
+            margin-bottom 35px
+            
+            @media screen and (max-width $screen-sm)
+                font-size 38px !important
+                margin-bottom 70px !important
+            
+        .clouds2
+            background-size cover
+            background-position center
+            background-repeat no-repeat
+            background-image url('assets/clouds2.png')
+            
+            min-width 1174px
+            height 406px
+            
+            top 100px
+            
+            @media screen and (max-width $screen-utn)
+                top 10px !important
+            
+        .box
+            display flex
+            flex-flow row wrap
+            justify-content center
+            align-items center
+
+            width 100%
+            max-width 550px
+            min-height 220px
+            border-radius 4px
+            background-color rgb(255, 255, 255)
+            box-shadow 0px 8px 21px 0px rgba(138, 138, 138, 0.23),0px 16px 43.86px 7.14px rgba(148, 83, 230, 0.09)
+            
+            span
+                width 100%
+                text-align center
+                color #4e0f89
+                font-size 24px
+                margin-top 115px
+                
+                @media screen and (max-width $screen-sm)
+                    margin-top 90px !important
