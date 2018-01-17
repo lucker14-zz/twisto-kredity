@@ -57,3 +57,51 @@ function animateCoin(event){
         item.addEventListener('click', showPopup)
     })
 }
+
+// generate separate code
+var rand = function(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+ 
+var generateWeighedList = function(list, weight) {
+    var weighed_list = [];
+     
+    // Loop over weights
+    for (var i = 0; i < weight.length; i++) {
+        var multiples = weight[i] * 100;
+         
+        // Loop over the list of items
+        for (var j = 0; j < multiples; j++) {
+            weighed_list.push(list[i]);
+        }
+    }
+     
+    return weighed_list;
+};
+ 
+var list = ['kredit100', 'kredit200', 'kredit300', 'kredit400', 'kredit500'];
+var weight = [0.6, 0.15, 0.12, 0.1, 0.03];
+var weighed_list = generateWeighedList(list, weight);
+ 
+var random_num = rand(0, weighed_list.length-1);
+ 
+console.log(weighed_list[random_num]);
+
+var my_list = [
+    {
+        name: 'string',
+        code: 'string'
+    },{
+        name: 'string',
+        code: 'string'
+    },{
+        name: 'string',
+        code: 'string'
+    },{
+        name: 'string',
+        code: 'string'
+    },{
+        name: 'string',
+        code: 'string'
+    }
+]
