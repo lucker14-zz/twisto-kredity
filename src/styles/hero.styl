@@ -42,7 +42,7 @@
     h1
         text-shadow 0 6px 40px rgba(0, 0, 0, 0.57)
         color #ffffff
-        font-family Roboto
+        font-family "Roboto", "Helvetica", sans-serif
         font-size 50px
         line-height 72px
         font-weight 700
@@ -192,13 +192,16 @@
     &__text
         text-shadow 0 6px 40px rgba(0, 0, 0, 0.57)
         color #ffffff
-        font-family Roboto
+        font-family "Roboto", "Helvetica", sans-serif
         font-size 27px
         font-weight 700
         
 @media screen and (max-width $screen-xs)
     div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.coin
         background-size contain !important
+        
+    div.container__inner--hero div.container.glasses div.glasses__item span.glasses__text
+        font-size 16px
         
 
 @media screen and (max-width $screen-md)

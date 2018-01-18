@@ -44,6 +44,10 @@ gulp.task('styles', function () {
     }))
     .pipe(concat('main.css'))
     .pipe(gulp.dest(paths.stylesDest))
+    .pipe(prefix({
+      browsers: ['last 7 versions'],
+      cascade: false
+    }))
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest(paths.stylesDest))
 });
