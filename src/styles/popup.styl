@@ -134,6 +134,7 @@
                     font-size 16px
                 
             a#text-link
+                display none
                 opacity 0.8
                 font-family Roboto
                 font-size 20px
@@ -187,14 +188,15 @@
         
     div.popup div.popup__container div.popup__content-holder div.image
         margin-right 0px
-        width 30vw
-        height 27vw
+        width 20vw
+        height 18vw
         
     div.popup div.popup__container div.popup__content-holder div.text-box
         align-items center
         
     div.popup div.popup__container div.popup__content-holder div.text-box p
         text-align center
+        font-size 16px
             
         
         
@@ -210,6 +212,7 @@
         
     div.popup div.popup__container div.popup__content-holder div.text-box h3
         font-size 20px
+        line-height 36px
         
     div.popup div.popup__container div.popup__content-holder div.text-box p
         font-size 16px
@@ -219,3 +222,31 @@
         
     div.popup div.popup__container div.popup__content-holder div.text-box a.button
         margin-top 16px
+        
+@media screen and (max-width $screen-utn)
+    div.popup div.popup__container
+        padding 10px
+        
+    div.popup div.popup__container h2
+        font-size 18px
+        line-height 24px
+        margin-bottom 7px
+        
+    div.popup div.popup__container h2 span.green
+        font-size 18px
+        
+    div.popup div.popup__container h2 span.green-smaller
+        font-size 16px
+        
+    div.popup div.popup__container div.popup__content-holder div.text-box h3
+        font-size 16px
+        line-height 30px
+        
+    div.popup div.popup__container div.popup__content-holder div.text-box p
+        font-size 14px
+        
+    div.popup div.popup__container div.popup__content-holder div.text-box a#text-link
+        font-size 13px
+        
+    div.popup div.popup__container div.popup__content-holder div.text-box a.button
+        margin-top 12px

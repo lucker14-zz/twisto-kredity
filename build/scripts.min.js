@@ -39,10 +39,24 @@ function animateCoin(event){
 
     // set info to frontend
     var code_item = getItemWithCode(code)
+    var drink = document.querySelector('span.drink')
+    var count = document.querySelector('span.count')
+    var text = ''
+
+    if (code_item.icon == 'wine') {
+        text = 'víno'
+    } else if (code_item.icon == 'beer'){
+        text = 'pivo'
+    } else if (code_item.icon == 'champagne'){
+        text = 'šampaňské'
+    }
+
+    drink.innerText = text
+    count.innerText = code_item.name
 
     console.log(code_item)
     setValueToPopup(code_item.name)
-    setUrlToCtas(code_item.name)
+    setUrlToCtas(code_item.code)
 
     // all of the below needs replacement
     console.log(event.target)
@@ -241,10 +255,25 @@ function recoverState(){
     var first_glass = document.querySelector('.glasses__img#wine')
 
     // set new urls
-    setUrlToCtas(item_to_work_with.name)
+    setUrlToCtas(item_to_work_with.code)
 
     // set popup text
     setValueToPopup(item_to_work_with.name)
+
+    var drink = document.querySelector('span.drink')
+    var count = document.querySelector('span.count')
+    var text = ''
+
+    if (item_to_work_with.icon == 'wine') {
+        text = 'víno'
+    } else if (item_to_work_with.icon == 'beer'){
+        text = 'pivo'
+    } else if (item_to_work_with.icon == 'champagne'){
+        text = 'šampaňské'
+    }
+
+    drink.innerText = text
+    count.innerText = item_to_work_with.name
 
     // animate or just set one active item
     first_glass.classList.remove('shaking')

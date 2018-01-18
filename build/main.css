@@ -1094,22 +1094,25 @@ li {
   text-shadow: 0 6px 40px rgba(0,0,0,0.57);
   color: #fff;
   font-family: Roboto;
-  font-size: 70px;
+  font-size: 50px;
+  line-height: 72px;
   font-weight: 700;
   margin: 60px 0 75px;
 }
 @media screen and (max-width: $screen-pc) {
   .container__inner--hero h1 {
-    font-size: 55px;
+    font-size: 40px;
     max-width: 900px;
     margin: 50px 0 35px;
+    line-height: 56px;
   }
 }
 @media screen and (max-width: $screen-lg) {
   .container__inner--hero h1 {
     width: 100%;
     text-align: center;
-    font-size: 42px;
+    font-size: 30px;
+    line-height: 50px;
   }
 }
 @media screen and (max-width: $screen-tn) {
@@ -1274,8 +1277,8 @@ li {
 }
 @media screen and (max-width: $screen-md) {
   .glasses__img#wine {
-    width: 20vw;
-    height: 27.3vw;
+    width: 14vw;
+    height: 22.3vw;
   }
 }
 .glasses__img#water {
@@ -1292,8 +1295,8 @@ li {
 }
 @media screen and (max-width: $screen-md) {
   .glasses__img#water {
-    width: 20vw;
-    height: 27.3vw;
+    width: 14vw;
+    height: 22.3vw;
   }
 }
 .glasses__img#beer {
@@ -1310,8 +1313,8 @@ li {
 }
 @media screen and (max-width: $screen-md) {
   .glasses__img#beer {
-    width: 20vw;
-    height: 27.3vw;
+    width: 14vw;
+    height: 22.3vw;
   }
 }
 .glasses__text {
@@ -1338,8 +1341,8 @@ li {
   div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#water,
   div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#beer,
   div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#wine {
-    width: 20vw;
-    height: 27.3vw;
+    width: 14vw;
+    height: 22.3vw;
   }
 }
 
@@ -3285,22 +3288,25 @@ body button .success {
   text-shadow: 0 6px 40px rgba(0,0,0,0.57);
   color: #fff;
   font-family: Roboto;
-  font-size: 70px;
+  font-size: 50px;
+  line-height: 72px;
   font-weight: 700;
   margin: 60px 0 75px;
 }
 @media screen and (max-width: 1220px) {
   .container__inner--hero h1 {
-    font-size: 55px;
+    font-size: 40px;
     max-width: 900px;
     margin: 50px 0 35px;
+    line-height: 56px;
   }
 }
 @media screen and (max-width: 980px) {
   .container__inner--hero h1 {
     width: 100%;
     text-align: center;
-    font-size: 42px;
+    font-size: 30px;
+    line-height: 50px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -3530,8 +3536,8 @@ body button .success {
 }
 @media screen and (max-width: 768px) {
   .glasses__img#wine {
-    width: 20vw;
-    height: 27.3vw;
+    width: 14vw;
+    height: 22.3vw;
   }
 }
 .glasses__img#water {
@@ -3548,8 +3554,8 @@ body button .success {
 }
 @media screen and (max-width: 768px) {
   .glasses__img#water {
-    width: 20vw;
-    height: 27.3vw;
+    width: 14vw;
+    height: 22.3vw;
   }
 }
 .glasses__img#beer {
@@ -3566,8 +3572,8 @@ body button .success {
 }
 @media screen and (max-width: 768px) {
   .glasses__img#beer {
-    width: 20vw;
-    height: 27.3vw;
+    width: 14vw;
+    height: 22.3vw;
   }
 }
 .glasses__text {
@@ -3600,8 +3606,8 @@ body button .success {
   div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#water,
   div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#beer,
   div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#wine {
-    width: 20vw;
-    height: 27.3vw;
+    width: 14vw;
+    height: 22.3vw;
   }
 }
 .container__outer--why {
@@ -4281,6 +4287,7 @@ body button .success {
   }
 }
 .popup__container .text-box a#text-link {
+  display: none;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
@@ -4376,8 +4383,8 @@ body button .success {
   }
   div.popup div.popup__container div.popup__content-holder div.image {
     margin-right: 0px;
-    width: 30vw;
-    height: 27vw;
+    width: 20vw;
+    height: 18vw;
   }
   div.popup div.popup__container div.popup__content-holder div.text-box {
     -webkit-box-align: center;
@@ -4402,6 +4409,7 @@ body button .success {
   }
   div.popup div.popup__container div.popup__content-holder div.text-box p {
     text-align: center;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -4416,6 +4424,7 @@ body button .success {
   }
   div.popup div.popup__container div.popup__content-holder div.text-box h3 {
     font-size: 20px;
+    line-height: 36px;
   }
   div.popup div.popup__container div.popup__content-holder div.text-box p {
     font-size: 16px;
@@ -4425,6 +4434,35 @@ body button .success {
   }
   div.popup div.popup__container div.popup__content-holder div.text-box a.button {
     margin-top: 16px;
+  }
+}
+@media screen and (max-width: 360px) {
+  div.popup div.popup__container {
+    padding: 10px;
+  }
+  div.popup div.popup__container h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+  div.popup div.popup__container h2 span.green {
+    font-size: 18px;
+  }
+  div.popup div.popup__container h2 span.green-smaller {
+    font-size: 16px;
+  }
+  div.popup div.popup__container div.popup__content-holder div.text-box h3 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  div.popup div.popup__container div.popup__content-holder div.text-box p {
+    font-size: 14px;
+  }
+  div.popup div.popup__container div.popup__content-holder div.text-box a#text-link {
+    font-size: 13px;
+  }
+  div.popup div.popup__container div.popup__content-holder div.text-box a.button {
+    margin-top: 12px;
   }
 }
 .container__outer--stats {
@@ -4441,10 +4479,12 @@ body button .success {
 }
 .container__outer--stats .container__inner--stats h2 {
   color: #4e0f89;
-  font-size: 72px;
+  font-size: 52px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
 }
 @media screen and (max-width: 660px) {
   .container__outer--stats .container__inner--stats h2 {
@@ -4467,7 +4507,7 @@ body button .success {
 }
 @media screen and (max-width: 360px) {
   .container__outer--stats .container__inner--stats .clouds2 {
-    top: 10px !important;
+    top: 85px !important;
   }
 }
 .container__outer--stats .container__inner--stats .box {
@@ -4555,10 +4595,17 @@ body button .success {
   color: #4e0f89;
   font-size: 24px;
   margin-top: 115px;
+  font-weight: 700;
+  font-size: 42px;
 }
 @media screen and (max-width: 660px) {
   .container__outer--stats .container__inner--stats .box span {
     margin-top: 90px !important;
+  }
+}
+@media screen and (max-width: 1035px) {
+  div.container__outer--stats div.container__inner--stats div.clouds2 {
+    top: 145px;
   }
 }
 
@@ -4841,6 +4888,7 @@ body button .success {
   }
 }
 .popup__container .text-box a#text-link {
+  display: none;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
@@ -4911,8 +4959,8 @@ body button .success {
   }
   div.popup div.popup__container div.popup__content-holder div.image {
     margin-right: 0px;
-    width: 30vw;
-    height: 27vw;
+    width: 20vw;
+    height: 18vw;
   }
   div.popup div.popup__container div.popup__content-holder div.text-box {
     -webkit-box-align: center;
@@ -4924,6 +4972,7 @@ body button .success {
   }
   div.popup div.popup__container div.popup__content-holder div.text-box p {
     text-align: center;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: $screen-xs) {
@@ -4938,6 +4987,7 @@ body button .success {
   }
   div.popup div.popup__container div.popup__content-holder div.text-box h3 {
     font-size: 20px;
+    line-height: 36px;
   }
   div.popup div.popup__container div.popup__content-holder div.text-box p {
     font-size: 16px;
@@ -4947,6 +4997,35 @@ body button .success {
   }
   div.popup div.popup__container div.popup__content-holder div.text-box a.button {
     margin-top: 16px;
+  }
+}
+@media screen and (max-width: $screen-utn) {
+  div.popup div.popup__container {
+    padding: 10px;
+  }
+  div.popup div.popup__container h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+  div.popup div.popup__container h2 span.green {
+    font-size: 18px;
+  }
+  div.popup div.popup__container h2 span.green-smaller {
+    font-size: 16px;
+  }
+  div.popup div.popup__container div.popup__content-holder div.text-box h3 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  div.popup div.popup__container div.popup__content-holder div.text-box p {
+    font-size: 14px;
+  }
+  div.popup div.popup__container div.popup__content-holder div.text-box a#text-link {
+    font-size: 13px;
+  }
+  div.popup div.popup__container div.popup__content-holder div.text-box a.button {
+    margin-top: 12px;
   }
 }
 
@@ -4964,10 +5043,12 @@ body button .success {
 }
 .container__outer--stats .container__inner--stats h2 {
   color: #4e0f89;
-  font-size: 72px;
+  font-size: 52px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
 }
 @media screen and (max-width: $screen-sm) {
   .container__outer--stats .container__inner--stats h2 {
@@ -4988,7 +5069,7 @@ body button .success {
 }
 @media screen and (max-width: $screen-utn) {
   .container__outer--stats .container__inner--stats .clouds2 {
-    top: 10px !important;
+    top: 85px !important;
   }
 }
 .container__outer--stats .container__inner--stats .box {
@@ -5033,10 +5114,17 @@ body button .success {
   color: #4e0f89;
   font-size: 24px;
   margin-top: 115px;
+  font-weight: 700;
+  font-size: 42px;
 }
 @media screen and (max-width: $screen-sm) {
   .container__outer--stats .container__inner--stats .box span {
     margin-top: 90px !important;
+  }
+}
+@media screen and (max-width: 1035px) {
+  div.container__outer--stats div.container__inner--stats div.clouds2 {
+    top: 145px;
   }
 }
 
