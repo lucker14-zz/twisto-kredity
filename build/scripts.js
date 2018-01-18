@@ -1,6 +1,8 @@
 var glasses = [].slice.call(document.querySelectorAll('.glasses__item'))
 var popup = document.querySelector('.popup')
 var popup_close = document.querySelector('.popup__close')
+var weight = ['0.01','0.01','0.03','0.04','0.05','0.05','0.06','0.06','0.06','0.06','0.06','0.06','0.06','0.09','0.12','0.16','0.01','0.01'];
+
 
 glasses.forEach(function(item, index){
     item.addEventListener('click', sendToAnimate)
@@ -22,6 +24,8 @@ function showPopup() {
     if (popup.classList.contains('hidden')) 
         popup.classList.remove('hidden');
 }
+
+var my_list=[{name:"100",code:"TF75PSM",icon:"beer"},{name:"110",code:"6REL6IH",icon:"beer"},{name:"120",code:"N72XR8Q",icon:"beer"},{name:"130",code:"46A24H7",icon:"beer"},{name:"140",code:"S0NLEU5",icon:"beer"},{name:"150",code:"EZG59M4",icon:"beer"},{name:"160",code:"DOK9WWM",icon:"wine"},{name:"170",code:"OABVHME",icon:"wine"},{name:"180",code:"MI7HD9Q",icon:"wine"},{name:"190",code:"MNNUB0M",icon:"wine"},{name:"200",code:"0ZP8F80",icon:"wine"},{name:"225",code:"6M2J3JT",icon:"wine"},{name:"250",code:"77W3UO1",icon:"wine"},{name:"300",code:"87D047M",icon:"wine"},{name:"450",code:"ELJQ6IY",icon:"champagne"},{name:"500",code:"TIZ8A0Z",icon:"champagne"},{name:"750",code:"TKQIXS4",icon:"champagne"},{name:"1000",code:"HHWRC1R",icon:"champagne"}];
 
 function hidePopup() {
     if (!popup.classList.contains('hidden')) 
@@ -109,7 +113,6 @@ var generateWeighedList = function(list, weight) {
 };
  
 var list = ['TF75PSM','6REL6IH','N72XR8Q','46A24H7','S0NLEU5','EZG59M4','DOK9WWM','OABVHME','MI7HD9Q','MNNUB0M','0ZP8F80','6M2J3JT','77W3UO1','87D047M','ELJQ6IY','TIZ8A0Z','TKQIXS4','HHWRC1R'];
-var weight = ['0.01','0.01','0.03','0.04','0.05','0.05','0.06','0.06','0.06','0.06','0.06','0.06','0.06','0.09','0.12','0.16','0.01','0.01'];
 
 function setValueToPopup(item){
     var popup_text = document.querySelector('.popup span.green')
@@ -173,82 +176,6 @@ function getTimeCookie(){
     return window.localStorage.getItem('xcKyUlV')
 }
 
-var my_list = [
-    {
-        name: '100',
-        code: 'TF75PSM',
-        icon: 'beer',
-    },{
-        name: '110',
-        code: '6REL6IH',
-        icon: 'beer',
-    },{
-        name: '120',
-        code: 'N72XR8Q',
-        icon: 'beer',
-    },{
-        name: '130',
-        code: '46A24H7',
-        icon: 'beer',
-    },{
-        name: '140',
-        code: 'S0NLEU5',
-        icon: 'beer',
-    },{
-        name: '150',
-        code: 'EZG59M4',
-        icon: 'beer',
-    },{
-        name: '160',
-        code: 'DOK9WWM',
-        icon: 'wine',
-    },{
-        name: '170',
-        code: 'OABVHME',
-        icon: 'wine',
-    },{
-        name: '180',
-        code: 'MI7HD9Q',
-        icon: 'wine',
-    },{
-        name: '190',
-        code: 'MNNUB0M',
-        icon: 'wine',
-    },{
-        name: '200',
-        code: '0ZP8F80',
-        icon: 'wine',
-    },{
-        name: '225',
-        code: '6M2J3JT',
-        icon: 'wine',
-    },{
-        name: '250',
-        code: '77W3UO1',
-        icon: 'wine',
-    },{
-        name: '300',
-        code: '87D047M',
-        icon: 'wine',
-    },{
-        name: '450',
-        code: 'ELJQ6IY',
-        icon: 'champagne',
-    },{
-        name: '500',
-        code: 'TIZ8A0Z',
-        icon: 'champagne',
-    },{
-        name: '750',
-        code: 'TKQIXS4',
-        icon: 'champagne',
-    },{
-        name: '1000',
-        code: 'HHWRC1R',
-        icon: 'champagne',
-    }
-]
-
 function recoverState(){
     var saved = getPromoCookie()
     var item_to_work_with = getItemWithCode(saved)
@@ -292,19 +219,19 @@ function recoverState(){
     })
 }
 
-// (function(){
-//     var time_cookie = Date.parse(getTimeCookie())
-//     console.log(time_cookie)
-//     console.log(typeof(time_cookie))
-//     var now = new Date()
-//     console.log(now)
-//     console.log(typeof(now))
-//     var diff = 24*60*60*1000
-//     console.log(diff)
+(function(){
+    var time_cookie = Date.parse(getTimeCookie())
+    console.log(time_cookie)
+    console.log(typeof(time_cookie))
+    var now = new Date()
+    console.log(now)
+    console.log(typeof(now))
+    var diff = 24*60*60*1000
+    console.log(diff)
 
-//     console.log(now-time_cookie)
+    console.log(now-time_cookie)
 
-//     if ((now - time_cookie) < diff) {
-//         recoverState()
-//     }
-// })()
+    if ((now - time_cookie) < diff) {
+        recoverState()
+    }
+})()
