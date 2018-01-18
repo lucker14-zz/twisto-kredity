@@ -45,17 +45,23 @@ function animateCoin(event){
     var code_item = getItemWithCode(code)
     var drink = document.querySelector('span.drink')
     var count = document.querySelector('span.count')
+    var vvv = document.querySelector('span.vvv')
     var text = ''
+    var vvv_text = ''
 
     if (code_item.icon == 'wine') {
         text = 'víno'
+        vvv_text = 've'
     } else if (code_item.icon == 'beer'){
         text = 'pivo'
+        vvv_text = 'v'
     } else if (code_item.icon == 'champagne'){
         text = 'šampaňské'
+        vvv_text = 'v'
     }
 
     drink.innerText = text
+    vvv.innerText = vvv_text
     count.innerText = code_item.name
 
     console.log(code_item)
@@ -193,17 +199,23 @@ function recoverState(){
 
     var drink = document.querySelector('span.drink')
     var count = document.querySelector('span.count')
+    var vvv = document.querySelector('span.vvv')
     var text = ''
+    var vvv_text = ''
 
     if (item_to_work_with.icon == 'wine') {
         text = 'víno'
+        vvv_text = 've'
     } else if (item_to_work_with.icon == 'beer'){
         text = 'pivo'
+        vvv_text = 'v'
     } else if (item_to_work_with.icon == 'champagne'){
         text = 'šampaňské'
+        vvv_text = 'v'
     }
 
     drink.innerText = text
+    vvv.innerText = vvv_text
     count.innerText = item_to_work_with.name
 
     // animate or just set one active item
