@@ -34,6 +34,12 @@
         justify-content center
         align-items center
         
+        @media screen and (max-width $screen-lg)
+            max-width 90vw
+            
+        @media screen and (max-width $screen-xs)
+            padding 16px
+        
         h2
             color #4e0f89
             font-family Roboto
@@ -43,11 +49,24 @@
             font-weight 700
             margin-bottom 70px
             
+            @media screen and (max-width $screen-lg)
+                font-size 28px
+                width 100%
+                text-align center
+                line-height 40px
+                margin-bottom 25px
+                
+            @media screen and (max-width $screen-xs)
+                font-size 24px
+            
             span.green
                 color #62c95b
                 font-family Roboto
                 font-size 50px
                 font-weight 900
+                
+                @media screen and (max-width $screen-lg)
+                    font-size 36px
                 
             span.green-smaller
                 color #62c95b
@@ -59,6 +78,10 @@
             flex-flow row wrap
             justify-content space-between
             align-items flex-start
+            
+            @media screen and (max-width $screen-lg)
+                flex-flow column wrap
+                align-items center
 
         .image
             background-size cover
@@ -69,7 +92,12 @@
             height 269px
             margin-right 120px
             
-            background-image url('assets/credits.png')
+            background-image url('assets/money.svg')
+            
+            @media screen and (max-width $screen-lg)
+                margin-right 0px
+                width 30vw
+                height 27vw
             
         .text-box
             display flex
@@ -78,12 +106,18 @@
             align-items flex-start
             max-width 430px
             
+            @media screen and (max-width $screen-lg)
+                align-items center
+            
             h3
                 color #4e0f89
                 font-family Roboto, sans-serif
                 font-size 30px
                 font-weight 700
                 line-height 56px
+                
+                @media screen and (max-width $screen-xs)
+                    font-size 20px
                 
             p
                 opacity 0.8
@@ -92,6 +126,12 @@
                 font-size 20px
                 font-weight 400
                 line-height 30px
+                
+                @media screen and (max-width $screen-lg)
+                    text-align center
+                    
+                @media screen and (max-width $screen-xs)
+                    font-size 16px
                 
             a#text-link
                 opacity 0.8
@@ -102,8 +142,14 @@
                 color #450d7a
                 text-decoration underline
                 
+                @media screen and (max-width $screen-xs)
+                    font-size 16px
+                
             a.button
                 margin-top 32px
+                
+                @media screen and (max-width $screen-xs)
+                    margin-top 16px
         
     &__close
         position absolute
@@ -120,3 +166,56 @@
         background-repeat no-repeat
         background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAoCAMAAABKKxPSAAAAAXNSR0IB2cksfwAAAEhQTFRFAAAA/8do/8dj/8Zl/8dk/8Zl/8dl/8hl/8dl/8pl/8Zk/8dl/8Zk/+Oy//HY/8pu//Xi/8Zk//HZ/////8dl/8dl/8Zk/8dlWEPdfgAAABh0Uk5TACBfr7/P/2/fMO9gcP////+w///A0ODwsaxXuAAAAP9JREFUeJydlOEWgiAMhUFjWZiAgb7/mwaU2mAItR96zs53tnsHjLF/gnf9RQCIS9/xMnX1yBHiSlPdAEkMHdFRpFSsmXa/3SkM4H5DmKSpEPK7WhkDOCryQtNP610jaeHLTF0ckpjNLY0hYmMNAxgb1G0KeR0D4KmLx6TCT2mN0t6JQYn5qVXAnpgzjFmUCISKH5S2mY3AZFgwkkr2YIYBtHOupa9r94Hnore5TCht0jnrdyE1P1Batp9baoQK98u9YksNW3679zWFbn+X6xm2Hruj8Z037w1fsdB6xXvIayTNOGKrymyOi8ypeDKophtpKnaXxnrYWSNP9vhZvACWdiCZEBA/2AAAAABJRU5ErkJggg==')
         
+
+@media screen and (max-width $screen-lg)
+    div.popup div.popup__container
+        max-width 90vw
+        
+    div.popup div.popup__container h2
+        font-size 28px
+        width 100%
+        text-align center
+        line-height 40px
+        margin-bottom 25px
+        
+    div.popup div.popup__container h2 span.green
+        font-size 36px
+        
+    div.popup div.popup__container div.popup__content-holder
+        flex-flow column wrap
+        align-items center
+        
+    div.popup div.popup__container div.popup__content-holder div.image
+        margin-right 0px
+        width 30vw
+        height 27vw
+        
+    div.popup div.popup__container div.popup__content-holder div.text-box
+        align-items center
+        
+    div.popup div.popup__container div.popup__content-holder div.text-box p
+        text-align center
+            
+        
+        
+@media screen and (max-width $screen-xs)
+    div.popup div.popup__container
+        padding 16px
+        
+    div.popup div.popup__container h2
+        font-size 24px
+        
+    div.popup div.popup__container h2 span.green
+        font-size 30px
+        
+    div.popup div.popup__container div.popup__content-holder div.text-box h3
+        font-size 20px
+        
+    div.popup div.popup__container div.popup__content-holder div.text-box p
+        font-size 16px
+        
+    div.popup div.popup__container div.popup__content-holder div.text-box a#text-link
+        font-size 16px
+        
+    div.popup div.popup__container div.popup__content-holder div.text-box a.button
+        margin-top 16px

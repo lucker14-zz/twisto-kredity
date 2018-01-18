@@ -26,7 +26,7 @@ gulp.task('scripts', function() {
     // Strip all debugger code out.
     // .pipe(stripDebug())
     // Minify the JavaScript.
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest(paths.jsDest));
 });
 

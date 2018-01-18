@@ -30,15 +30,28 @@ function hidePopup() {
 
 // Animations
 function animateCoin(event){
+    // generate code and save it
+    var code = generateCode()
+    setPromoCookie(code)
+    setTimeCookie()
+
+    console.log(code)
+
+    // set info to frontend
+    var code_item = getItemWithCode(code)
+
+    console.log(code_item)
+    setValueToPopup(code_item.name)
+    setUrlToCtas(code_item.name)
+
+    // all of the below needs replacement
     console.log(event.target)
-    var coin = document.querySelector('.coin#' + event.target.id)
-    var text = document.querySelector('.glasses__text#' + event.target.id)
 
     event.target.classList.remove('shaking')
     event.target.classList.add('flipOutY')
 
     setTimeout(function(){
-        event.target.classList.add('coin')
+        event.target.classList.add(code_item.icon)
         event.target.classList.remove('flipOutY')
         event.target.classList.add('flipInY')
     }, 500)
@@ -46,16 +59,18 @@ function animateCoin(event){
 
     console.log(event.target.id)
 
-    console.log(coin)
-
     setTimeout(function() {
         showPopup()
-    }, 1500)
+    }, 2500)
 
     glasses.forEach(function(item, index){
         item.removeEventListener('click', sendToAnimate)
         item.addEventListener('click', showPopup)
     })
+}
+
+function getHref(href, promo) {
+  return href + (href.indexOf('/?') !== -1 ? "&" : "?") + "promo=" + promo;
 }
 
 // generate separate code
@@ -79,32 +94,8 @@ var generateWeighedList = function(list, weight) {
     return weighed_list;
 };
  
-var list = ['kredit100', 'kredit200', 'kredit300', 'kredit400', 'kredit500'];
-var weight = [0.6, 0.15, 0.12, 0.1, 0.03];
-var weighed_list = generateWeighedList(list, weight);
- 
-var random_num = rand(0, weighed_list.length-1);
- 
-console.log(weighed_list[random_num]);
-
-var my_list = [
-    {
-        name: 'string',
-        code: 'string',
-    },{
-        name: 'string',
-        code: 'string',
-    },{
-        name: 'string',
-        code: 'string',
-    },{
-        name: 'string',
-        code: 'string',
-    },{
-        name: 'string',
-        code: 'string',
-    }
-]
+var list = ['TF75PSM','6REL6IH','N72XR8Q','46A24H7','S0NLEU5','EZG59M4','DOK9WWM','OABVHME','MI7HD9Q','MNNUB0M','0ZP8F80','6M2J3JT','77W3UO1','87D047M','ELJQ6IY','TIZ8A0Z','TKQIXS4','HHWRC1R'];
+var weight = ['0.01','0.01','0.03','0.04','0.05','0.05','0.06','0.06','0.06','0.06','0.06','0.06','0.06','0.09','0.12','0.16','0.01','0.01'];
 
 function setValueToPopup(item){
     var popup_text = document.querySelector('.popup span.green')
@@ -115,7 +106,177 @@ function setValueToPopup(item){
 var all_affected_ctas = [].slice.call(document.querySelectorAll('a.button'))
 
 function setUrlToCtas(input){
-    all_affected_ctas.forEach(function(item, index){
-        item.src = input
+    // all_affected_ctas.forEach(function(item, index){
+    //     item.src = input
+    // })
+
+    $('[href*="/registrace/"]').each(function() {
+        var $href = $(this),
+            href =  $href.attr('href');
+      $href.attr('href', getHref(href, input));
+      // $('.result').append(getHref(href, input) + "<br>");
+    });
+}
+
+function generateCode(){
+    var weighed_list = generateWeighedList(list, weight);
+    var random_num = rand(0, weighed_list.length-1);
+    return weighed_list[random_num];
+}
+
+function getItemWithCode(value){
+    console.log('input')
+    console.log(value)
+    console.log('type input')
+    console.log(typeof(value))
+    var ret = ''
+    my_list.forEach(function(item, index){
+        console.log('value and comparison')
+        console.log(item.code)
+        console.log(item.code == value)
+        console.log('type item')
+        console.log(typeof(item.code))
+        if (item.code == value) {
+            ret = item
+        }
+    })
+    return ret
+}
+
+function setPromoCookie(string){
+    window.localStorage.setItem('aZxYujkL', string)
+}
+
+function setTimeCookie(){
+    var date_now = new Date()
+    window.localStorage.setItem('xcKyUlV', date_now)
+}
+
+function getPromoCookie(){
+    return window.localStorage.getItem('aZxYujkL')
+}
+
+function getTimeCookie(){
+    return window.localStorage.getItem('xcKyUlV')
+}
+
+var my_list = [
+    {
+        name: '100',
+        code: 'TF75PSM',
+        icon: 'beer',
+    },{
+        name: '110',
+        code: '6REL6IH',
+        icon: 'beer',
+    },{
+        name: '120',
+        code: 'N72XR8Q',
+        icon: 'beer',
+    },{
+        name: '130',
+        code: '46A24H7',
+        icon: 'beer',
+    },{
+        name: '140',
+        code: 'S0NLEU5',
+        icon: 'beer',
+    },{
+        name: '150',
+        code: 'EZG59M4',
+        icon: 'beer',
+    },{
+        name: '160',
+        code: 'DOK9WWM',
+        icon: 'wine',
+    },{
+        name: '170',
+        code: 'OABVHME',
+        icon: 'wine',
+    },{
+        name: '180',
+        code: 'MI7HD9Q',
+        icon: 'wine',
+    },{
+        name: '190',
+        code: 'MNNUB0M',
+        icon: 'wine',
+    },{
+        name: '200',
+        code: '0ZP8F80',
+        icon: 'wine',
+    },{
+        name: '225',
+        code: '6M2J3JT',
+        icon: 'wine',
+    },{
+        name: '250',
+        code: '77W3UO1',
+        icon: 'wine',
+    },{
+        name: '300',
+        code: '87D047M',
+        icon: 'wine',
+    },{
+        name: '450',
+        code: 'ELJQ6IY',
+        icon: 'champagne',
+    },{
+        name: '500',
+        code: 'TIZ8A0Z',
+        icon: 'champagne',
+    },{
+        name: '750',
+        code: 'TKQIXS4',
+        icon: 'champagne',
+    },{
+        name: '1000',
+        code: 'HHWRC1R',
+        icon: 'champagne',
+    }
+]
+
+function recoverState(){
+    var saved = getPromoCookie()
+    var item_to_work_with = getItemWithCode(saved)
+    var first_glass = document.querySelector('.glasses__img#wine')
+
+    // set new urls
+    setUrlToCtas(item_to_work_with.name)
+
+    // set popup text
+    setValueToPopup(item_to_work_with.name)
+
+    // animate or just set one active item
+    first_glass.classList.remove('shaking')
+    first_glass.classList.add('flipOutY')
+
+    setTimeout(function(){
+        first_glass.classList.add(item_to_work_with.icon)
+        first_glass.classList.remove('flipOutY')
+        first_glass.classList.add('flipInY')
+    }, 500)
+
+    // clean handlers for generating
+    glasses.forEach(function(item, index){
+        item.removeEventListener('click', sendToAnimate)
+        item.addEventListener('click', showPopup)
     })
 }
+
+(function(){
+    var time_cookie = Date.parse(getTimeCookie())
+    console.log(time_cookie)
+    console.log(typeof(time_cookie))
+    var now = new Date()
+    console.log(now)
+    console.log(typeof(now))
+    var diff = 24*60*60*1000
+    console.log(diff)
+
+    console.log(now-time_cookie)
+
+    if ((now - time_cookie) < diff) {
+        recoverState()
+    }
+})()

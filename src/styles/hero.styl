@@ -132,25 +132,36 @@
         background-position center
         background-repeat no-repeat
         cursor pointer
-        
-        &.coin
-            background-image url('assets/token.png') !important
-            background-size 94px 96px !important
+            
+        &.beer#wine, &.beer#beer, &.beer#water
+            background-image url('assets/beer.png')
+            width 222px
+            height 242px
+            
+        &.wine#wine, &.wine#beer, &.wine#water
+            background-image url('assets/wine.png')
+            width 165px
+            height 214px
+            
+        &.champagne#wine, &.champagne#beer, &.champagne#water
+            background-image url('assets/champagne.svg')
+            width 165px
+            height 214px
         
         &.shaking
             animation tryme 7s ease-out infinite
         
         &#wine
-            background-image url('assets/wine.png')
-            width 165px
-            height 214px
+            background-image url('assets/green.svg')
+            width 162px
+            height 222px
             
             @media screen and (max-width $screen-md)
                 width 20vw
                 height 27.3vw
             
         &#water
-            background-image url('assets/water.png')
+            background-image url('assets/yellow.svg')
             width 162px
             height 222px
             
@@ -162,9 +173,9 @@
                 height 27.3vw
             
         &#beer
-            background-image url('assets/beer.png')
-            width 222px
-            height 242px
+            background-image url('assets/blue.svg')
+            width 162px
+            height 222px
             
             &.shaking
                 animation-delay .4s
@@ -180,3 +191,7 @@
         font-family Roboto
         font-size 27px
         font-weight 700
+        
+@media screen and (max-width $screen-xs)
+    div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.coin
+        background-size contain !important
