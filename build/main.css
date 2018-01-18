@@ -1114,7 +1114,8 @@ li {
 }
 @media screen and (max-width: $screen-tn) {
   .container__inner--hero h1 {
-    font-size: 36px;
+    font-size: 26px;
+    margin-top: 30px;
   }
 }
 .container__inner--hero .twistus {
@@ -1255,8 +1256,8 @@ li {
 .glasses__img.champagne#wine,
 .glasses__img.champagne#beer,
 .glasses__img.champagne#water {
-  background-image: url("assets/champagne.svg");
-  width: 165px;
+  background-image: url("assets/champagne@2x.png");
+  width: 150px;
   height: 214px;
 }
 .glasses__img.shaking {
@@ -1325,6 +1326,20 @@ li {
     -webkit-background-size: contain !important;
     -moz-background-size: contain !important;
     background-size: contain !important;
+  }
+}
+@media screen and (max-width: $screen-md) {
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.beer#wine,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.beer#water,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.beer#beer,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.wine#beer,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.wine#wine,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.wine#water,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#water,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#beer,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#wine {
+    width: 20vw;
+    height: 27.3vw;
   }
 }
 
@@ -3290,7 +3305,8 @@ body button .success {
 }
 @media screen and (max-width: 375px) {
   .container__inner--hero h1 {
-    font-size: 36px;
+    font-size: 26px;
+    margin-top: 30px;
   }
 }
 .container__inner--hero .twistus {
@@ -3496,8 +3512,8 @@ body button .success {
 .glasses__img.champagne#wine,
 .glasses__img.champagne#beer,
 .glasses__img.champagne#water {
-  background-image: url("assets/champagne.svg");
-  width: 165px;
+  background-image: url("assets/champagne@2x.png");
+  width: 150px;
   height: 214px;
 }
 .glasses__img.shaking {
@@ -3574,6 +3590,20 @@ body button .success {
     background-size: contain !important;
   }
 }
+@media screen and (max-width: 768px) {
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.beer#wine,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.beer#water,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.beer#beer,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.wine#beer,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.wine#wine,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.wine#water,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#water,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#beer,
+  div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#wine {
+    width: 20vw;
+    height: 27.3vw;
+  }
+}
 .container__outer--why {
   z-index: 10;
 }
@@ -3593,6 +3623,9 @@ body button .success {
   .container--inner__why h2 {
     width: 100%;
     text-align: center;
+    font-size: 36px;
+    line-height: 54px;
+    margin-bottom: 36px;
   }
 }
 .container--inner__why .why {
@@ -5036,6 +5069,9 @@ body button .success {
   .container--inner__why h2 {
     width: 100%;
     text-align: center;
+    font-size: 36px;
+    line-height: 54px;
+    margin-bottom: 36px;
   }
 }
 .container--inner__why .why {

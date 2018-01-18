@@ -99,8 +99,7 @@ var weight = ['0.01','0.01','0.03','0.04','0.05','0.05','0.06','0.06','0.06','0.
 
 function setValueToPopup(item){
     var popup_text = document.querySelector('.popup span.green')
-    var value = item.substring(item.length - 3, item.length)
-    popup_text.innerText = value
+    popup_text.innerText = item
 }
 
 var all_affected_ctas = [].slice.call(document.querySelectorAll('a.button'))
@@ -264,19 +263,19 @@ function recoverState(){
     })
 }
 
-(function(){
-    var time_cookie = Date.parse(getTimeCookie())
-    console.log(time_cookie)
-    console.log(typeof(time_cookie))
-    var now = new Date()
-    console.log(now)
-    console.log(typeof(now))
-    var diff = 24*60*60*1000
-    console.log(diff)
+// (function(){
+//     var time_cookie = Date.parse(getTimeCookie())
+//     console.log(time_cookie)
+//     console.log(typeof(time_cookie))
+//     var now = new Date()
+//     console.log(now)
+//     console.log(typeof(now))
+//     var diff = 24*60*60*1000
+//     console.log(diff)
 
-    console.log(now-time_cookie)
+//     console.log(now-time_cookie)
 
-    if ((now - time_cookie) < diff) {
-        recoverState()
-    }
-})()
+//     if ((now - time_cookie) < diff) {
+//         recoverState()
+//     }
+// })()

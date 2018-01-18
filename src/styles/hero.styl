@@ -58,7 +58,8 @@
             font-size 42px
             
         @media screen and (max-width $screen-tn)
-            font-size 36px
+            font-size 26px
+            margin-top 30px
             
 
     .twistus
@@ -144,8 +145,8 @@
             height 214px
             
         &.champagne#wine, &.champagne#beer, &.champagne#water
-            background-image url('assets/champagne.svg')
-            width 165px
+            background-image url('assets/champagne@2x.png')
+            width 150px
             height 214px
         
         &.shaking
@@ -195,3 +196,9 @@
 @media screen and (max-width $screen-xs)
     div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.coin
         background-size contain !important
+        
+
+@media screen and (max-width $screen-md)
+    div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.beer#wine,div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.beer#water,div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.beer#beer,div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.wine#beer,div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.wine#wine,div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.wine#water,div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#water,div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#beer,div.container__inner--hero div.container.glasses div.glasses__item div.glasses__img.champagne#wine
+        width 20vw
+        height 27.3vw

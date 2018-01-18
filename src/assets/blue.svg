@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="277px" height="512px" viewBox="0 0 277 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="451px" height="690px" viewBox="0 0 451 690" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
     <title>water</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group">
+    <defs>
+        <path d="M222.545,481.119743 L222.545,492.862 C222.545,503.431 213.976,512 203.407,512 L73.46,512 C62.89,512 54.322,503.431 54.322,492.862 L54.322,481.828012 C45.9022536,479.047571 39.6104435,471.460879 38.831,462.181 L0.455254597,5.41860949 C0.443556934,5.27937955 0.437700392,5.13972047 0.437700392,5 C0.437700392,2.23857625 2.67627664,-1.26909153e-15 5.43770039,-1.77635684e-15 L271.427133,-7.10542736e-15 C271.566905,-7.13110293e-15 271.706614,0.00586080273 271.845895,0.0175669647 C274.597616,0.248842459 276.640842,2.66703954 276.409566,5.41876133 L238.218,459.823 C237.399437,469.569037 231.121438,477.636911 222.545,481.119743 Z" id="path-1"></path>
+        <filter x="-48.9%" y="-20.4%" width="197.9%" height="152.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="30" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="31" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="31" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="30" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.180392157   0 0 0 0 0.031372549   0 0 0 0 0.282352941  0 0 0 0.6 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-266.000000, -152.000000)">
+        <g id="Group" transform="translate(353.000000, 210.000000)">
             <g id="water">
+                <g id="Combined-Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <path stroke="#FFFFFF" stroke-width="30" d="M237.545,489.661174 L237.545,492.862 C237.545,511.715271 222.260271,527 203.407,527 L73.46,527 C54.6059529,527 39.322,511.715495 39.322,492.862 L39.322,490.800971 C30.6266394,484.495829 24.8223924,474.613134 23.8836626,463.436828 L-14.4920828,6.67443796 C-14.5388734,6.11751821 -14.5622996,5.5588819 -14.5622996,5 C-14.5622996,-6.045695 -5.6079946,-15 5.43770039,-15 L271.427133,-15 C271.986218,-15 272.545058,-14.9765568 273.102179,-14.9297321 C284.109066,-14.0046302 292.281967,-4.33184182 291.356865,6.67504531 L253.165372,461.078419 C252.196557,472.613394 246.371979,482.891145 237.545,489.661174 Z"></path>
+                </g>
                 <path d="M0,0 L38.831,462.181 C39.818,473.932 49.644,482.968 61.437,482.968 L213.048,482.968 C226.179,482.968 237.119,472.908 238.218,459.823 L276.865,0 L0,0" id="Fill-1" fill="#F4F4F1"></path>
                 <path d="M222.545,476.361 L222.545,492.862 C222.545,503.431 213.976,512 203.407,512 L73.46,512 C62.89,512 54.322,503.431 54.322,492.862 L54.322,476.361 L222.545,476.361" id="Fill-2" fill="#9DC8E1"></path>
                 <path d="M266.745,120.348 L238.22,459.823 C237.121,472.908 226.179,482.968 213.05,482.968 L61.439,482.968 C49.647,482.968 39.82,473.932 38.833,462.181 L8.967,106.796 L9.537,106.741 C52.326,106.741 52.326,120.308 95.101,120.308 C137.89,120.308 137.89,106.741 180.679,106.741 C223.468,106.741 223.468,120.308 266.243,120.308 L266.745,120.348" id="Fill-3" fill="#C1DFF4"></path>
