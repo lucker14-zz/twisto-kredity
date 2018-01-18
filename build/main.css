@@ -3924,7 +3924,7 @@ body button .success {
   -o-border-radius: 6px;
   border-radius: 6px;
   background-color: #fff;
-  padding: 55px 50px 75px;
+  padding: 5vh;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -4671,7 +4671,7 @@ body button .success {
   box-shadow: 0 20px 50px rgba(17,1,35,0.1);
   border-radius: 6px;
   background-color: #fff;
-  padding: 55px 50px 75px;
+  padding: 5vh;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
