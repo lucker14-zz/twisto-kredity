@@ -76,6 +76,8 @@ function animateCoin(event){
 
 
     console.log(event.target.id)
+    ga('send', 'event', 'twisto-hra', 'chose-item', event.target.id);
+    ga('send', 'pageview', '/kampane/premen-vodu/' + event.target.id + '/');
 
     setTimeout(function() {
         showPopup()
@@ -156,6 +158,8 @@ function getItemWithCode(value){
             ret = item
         }
     })
+    ga('send', 'event', 'twisto-hra', 'won-' + ret.name);
+    ga('send', 'pageview', '/kampane/premen-vodu/' + ret.name + '/');
     return ret
 }
 
