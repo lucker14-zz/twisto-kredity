@@ -660,6 +660,7 @@ li {
 }
 .container__inner--hero h1 {
   text-shadow: 0 6px 40px rgba(0,0,0,0.57);
+  max-width: 1200px;
   color: #fff;
   font-family: "Roboto", "Helvetica", sans-serif;
   font-size: 50px;
@@ -2363,6 +2364,7 @@ body button .success {
   -ms-text-shadow: 0 6px 40px rgba(0,0,0,0.57);
   -o-text-shadow: 0 6px 40px rgba(0,0,0,0.57);
   text-shadow: 0 6px 40px rgba(0,0,0,0.57);
+  max-width: 1200px;
   color: #fff;
   font-family: "Roboto", "Helvetica", sans-serif;
   font-size: 50px;
